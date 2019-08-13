@@ -20,9 +20,11 @@ var mine = [12, 'twelve', true];
 console.log(mine);
 var namesEnum;
 (function (namesEnum) {
-    namesEnum[namesEnum["jonathan"] = 0] = "jonathan";
-    namesEnum[namesEnum["nic"] = 1] = "nic";
-    namesEnum[namesEnum["john"] = 2] = "john";
+    namesEnum[namesEnum["jonathan"] = 16] = "jonathan";
+    namesEnum[namesEnum["nic"] = 17] = "nic";
+    namesEnum[namesEnum["john"] = 18] = "john";
 })(namesEnum || (namesEnum = {}));
-var myNamesEnum = namesEnum;
-console.log(myNamesEnum[0]);
+var myNamesEnum = namesEnum.john;
+console.log(myNamesEnum);
+console.log(namesEnum);
+console.log(namesEnum[17]);

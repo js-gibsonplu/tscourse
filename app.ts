@@ -24,10 +24,12 @@ console.log(mine)
 
 
 enum namesEnum {
-    'jonathan',
+    'jonathan' = 16,
     'nic',
     'john'
 }
 
-const myNamesEnum = namesEnum;
-console.log(myNamesEnum[0]);
+let myNamesEnum: namesEnum = namesEnum.john;
+console.log(myNamesEnum);
+console.log(namesEnum);
+console.log(namesEnum[17]);
