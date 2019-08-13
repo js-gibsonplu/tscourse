@@ -6,6 +6,8 @@ let animals = {
     snake : 'boa'
 }
 
+const newNum = 19191919191;
+
 
 let number = 38; console.log(number);
 number = 1; console.log(number);
@@ -33,3 +35,13 @@ let myNamesEnum: namesEnum = namesEnum.john;
 console.log(myNamesEnum);
 console.log(namesEnum);
 console.log(namesEnum[17]);
+
+function returnMyAge() :number {
+    return newNum;
+}
+
+console.log(`my return function ` + returnMyAge());
+
+let multiply: () => number = returnMyAge;
+
+console.log(multiply());

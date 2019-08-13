@@ -5,6 +5,7 @@ var animals = {
     dog: 'hyena',
     snake: 'boa'
 };
+var newNum = 19191919191;
 var number = 38;
 console.log(number);
 number = 1;
@@ -28,3 +29,9 @@ var myNamesEnum = namesEnum.john;
 console.log(myNamesEnum);
 console.log(namesEnum);
 console.log(namesEnum[17]);
+function returnMyAge() {
+    return newNum;
+}
+console.log("my return function " + returnMyAge());
+var multiply = returnMyAge;
+console.log(multiply());
