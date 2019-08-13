@@ -24,6 +24,7 @@ console.log(age);
 let names: string[] = ['james', 'billy','steve']
 console.log(names);
 
+// tuples
 let mine: [number, string, boolean]= [12, 'twelve', true];
 console.log(mine)
 
