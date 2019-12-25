@@ -1,5 +1,5 @@
 // strings
-let myName = "jonathan";
+let myName = "jonathan"
 // myName = 17; cannot assign number to string type
 
 let animals = {
@@ -72,9 +72,9 @@ let userData: { name: string; age: number } = {
 
 console.table(userData)
 
-let userData2: {name: string, age: number} = {...userData};
+let userData2: { name: string, age: number } = { ...userData };
 userData2 = {
-    a: 17,
-    n: 'bacon',
+  a: 17,
+  n: 'bacon',
 }
 console.table(userData2);
