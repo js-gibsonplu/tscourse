@@ -1,6 +1,12 @@
+/* eslint-disable no-unused-var*/
+/* eslint-disable no-console*/
 // strings
-let myName = "jonathan"
-// myName = 17; cannot assign number to string type
+let userName:string = "Jonathan";
+console.log(`The user's name is ${userName}`)
+
+userName = 17;
+console.log(`The user's name is ${userName}`)
+
 
 let animals = {
   cat: "lion",
