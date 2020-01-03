@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-var*/
 /* eslint-disable no-console*/
 // strings
-var userName = "Jonathan";
-console.log("The user's name is " + userName);
-userName = 17;
-console.log("The user's name is " + userName);
+// let userName:string = "Jonathan";
+// console.log(`The user's name is ${userName}`)
+// userName = 17;
+// console.log(`The user's name is ${userName}`)
 // let animals = {
 //   cat: "lion",
 //   dog: "hyena",
@@ -37,10 +37,28 @@ console.log("The user's name is " + userName);
 // console.log(myNamesEnum);
 // console.log(namesEnum);
 // console.log(namesEnum[17]);
-// // functions
-// function returnMyAge(): number {
-//   return newNum;
-// }
+function calculator(num1, num2, choice) {
+    var total;
+    if (choice.toLocaleLowerCase() === 'add') {
+        return total = num1 + num2;
+    }
+    else if (choice.toLocaleLowerCase() === 'subtract') {
+        return total = num1 - num2;
+    }
+    else if (choice.toLocaleLowerCase() === 'multiply') {
+        return total = num1 * num2;
+    }
+    else if (choice.toLocaleLowerCase() === 'divide') {
+        return total = num1 / num2;
+    }
+    else {
+        return total = 0;
+    }
+}
+var myNumber = console.log("Multiply", calculator(10, 12, "multiply"));
+var myNumber2 = console.log("Divide", calculator(100, 12, "divide"));
+var myNumber3 = console.log("Add", calculator(1018736, 1208, "add"));
+var myNumber4 = console.log("Subtract", calculator(118736, 1208, "SUBTRACT"));
 // console.log(`my return function ` + returnMyAge());
 // let multiply: () => number = returnMyAge;
 // console.log(multiply());
